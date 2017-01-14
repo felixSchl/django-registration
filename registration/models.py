@@ -617,6 +617,7 @@ class SupervisedRegistrationProfile(RegistrationProfile):
 
         ctx_dict = {
             'user': self.user.username,
+            'email': self.user.email,
             'site': site,
         }
         send_email(
