@@ -540,6 +540,7 @@ class SupervisedRegistrationManager(RegistrationManager):
 
         ctx_dict = {
             'user': user,
+            'email': user.email,
             'profile_id': user.registrationprofile.id,
             'site': site,
         }
